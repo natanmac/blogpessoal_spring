@@ -84,7 +84,7 @@ public class UsuarioControllerTest {
 		Usuario usuario = TestBuilder.criarUsuario(null, "Giovana Lucia", "giovana_lucia@email.com.br", "12345678");
 		Optional<Usuario> usuarioCadastrado = usuarioService.cadastrarUsuario(usuario);
 		
-		Usuario usuarioUpdate = TestBuilder.criarUsuario(usuarioCadastrado.get().getId(), "Giovana Lucia Freitas", "giovana_lf@email.com", "12345678");
+		Usuario usuarioUpdate = TestBuilder.criarUsuario(usuarioCadastrado.get().getId(), "Giovana Lucia Freitas", "giovana_lf@email.com.br", "12345678");
 		
 		//When
 		HttpEntity<Usuario> requisicao = new HttpEntity<Usuario>(usuarioUpdate);
